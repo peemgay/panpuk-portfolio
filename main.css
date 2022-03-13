@@ -1,0 +1,246 @@
+.grid-container {
+	display: grid;
+    grid-template-rows: repeat(7,auto);
+	background-color:aqua;
+    /* justify-content:start; */
+	text-align: start;
+    grid-gap: 10px;
+    margin: 16px;
+    width: 100%;
+    height: 100%;
+    /* background: #ffff; */
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(115, 113, 113, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+	/* display: grid;
+    grid-template-columns: 15% auto;
+    margin-top: 0px -8px;
+    /* width: 1fr;
+    height: 100px; */
+}
+
+.grid-container > div{
+	display: grid;
+    margin: 0 auto;
+}
+
+#header{
+	display: grid;
+	grid-template-columns: auto;
+	grid-column: 1 / span 1;
+	text-align: center;
+	width: 500px;
+	height: 100%;
+}
+#under-header{
+	display: grid;
+	grid-template-columns: repeat(4,auto);
+	border: 5px dotted;
+	border-radius: 10px;
+	border-color: whitesmoke;
+	/* margin-left: 16px; */
+	width: 100%;
+    /* height: 100%; */
+}
+
+#under-header > .under-header-pic {
+	text-align: center;
+}
+
+#under-header > .under-header-pic > img{
+	/* justify-content: center; */
+	border-radius: 80px;
+	padding: 10px;
+	width: 100px;
+    height: 100px;
+}
+#main1{
+	display: grid;
+	grid-template-columns: repeat(2,auto);
+	margin-left: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+#main1 > .main1-ingre {
+	width: 500px;
+	height: 400px;
+}
+
+#main1 > .ingre{
+	width: 500px;
+	height: 400px;
+}
+
+#main1 > .main1-ingre > .main1-ingre-pic{
+	display: grid;
+	grid-template-rows: repeat(6,auto);
+	/* width: 100%;
+	height: 100%; */
+}
+
+#main1 > .main1-ingre > .main1-ingre-pic {
+	justify-content: center;
+}
+
+#main1 > .main1-ingre > .main1-ingre-pic > .cinnamon-1 {
+	/* width: 100%; */
+}
+
+
+#main1 > .main1-ingre > .main1-ingre-pic > .cinnamon-1 > img{
+	border-radius: 80px;
+	width: 300px;
+	height: 300px;
+}
+
+.ingre {
+width: 100px;
+}
+
+#right {
+	grid-template-columns: repeat(2,1fr);
+	display: grid;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
+#right > .right-pic> .right-pic-cinamon-2 > .cinnamon-2 {
+	/* justify-content: end; */
+	width: 100%;
+	/* height: 100%; */
+}
+
+#right > .right-pic > .right-pic-cinamon-2 > .cinnamon-2 > img {
+	border-radius: 80px;
+	/* text-align: center; */
+	justify-content: end;
+	width: 300px;
+	height: 300px;
+}
+
+.stepbystep {
+	text-align: start;
+}
+
+#footer{
+	/* background-color: lightblue; */
+}
+
+@media only screen and (max-width: 580px) {	
+	.grid-container {
+		display: grid;
+    /* grid-template-rows: repeat(7,auto); */
+	/* background-color:aqua; */
+    /* justify-content:start; */
+	/* text-align: center;
+    grid-gap: 10px;
+    margin: 16px;
+    width: 100%;
+    height: 100%; */
+    /* background: #ffff; */
+    /* border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px 0 rgba(115, 113, 113, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+	}
+
+	#header{
+		grid-column: 1 / span 1;
+		grid-template-columns: auto;
+		display: grid;
+		text-align: center;
+		width: 100%;
+    	height: 100%;
+	
+	}
+	#under-header{
+		grid-column-start: auto;
+		border: 5px dotted;
+		border-radius: 10px;
+		/* margin-left: 16px;
+		width: 100px;
+		height: 100px; */
+	}
+
+	#under-header > .under-header-pic  > img{
+		border-radius: 80px;
+		justify-content: end;
+	}
+
+	.ingre-text {
+		grid-column: 1 / span 1;
+		/* grid-template-columns: auto;
+		display: grid;
+		text-align: center;
+		width: 100%;
+    	height: 100%; */
+	}
+	
+	#main1 {
+		display: grid;
+		grid-template-columns: auto;
+		grid-column: 1 / span 1;
+		text-align: left;
+		width: 100%;
+    	height: 100%;
+	}
+	#main1 > .main1-ingre > .main1-ingre-pic {
+		justify-content: center;
+	}
+
+	#main1 > .main1-ingre > .main1-ingre-pic > .cinnamon-1 {
+		width: 100%;
+	}
+
+	.ingre{
+		width: 100%;
+	}
+
+	#main2{
+		grid-column: 1 / span 1;
+		/* display: grid;
+		grid-template-columns: auto;
+		grid-column: 1 / span 1;
+		text-align: left;
+		width: 500px;
+    	height: 100%; */
+	}
+	
+	#right {
+		grid-column: 1 / span 1;
+		grid-template-columns: auto;
+		display: grid;
+		/* justify-content: center; */
+		/* text-align: start; */
+		width: 100%;
+    	height: 100%;
+	}
+
+	#right > .right-pic > .cinnamon-2 {
+		width: 100%;
+		height: 400px;
+	}
+	
+	#right > .cinnamon-2 > img {
+		width: 300px;
+		height: 300px;
+	}
+
+	#footer{
+		grid-column: 1 / span 1;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		padding-right: 20px;
+	}
+
+	.stepbystep {
+		text-align: start;
+	}
+}
+
+
+
+
+
