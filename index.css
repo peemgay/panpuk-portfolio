@@ -10,6 +10,23 @@ body{
     height: 100%;
 }
 
+.a:hover{
+    color: 11px 7px 17px 0px rgba(255, 0, 0, 0.75);
+    transition: .4s;
+}
+
+.game{
+
+}
+
+.blog{
+
+}
+
+.recipe{
+
+}
+
 .head{
     display: flex;
     text-align: start;
@@ -78,4 +95,9 @@ h2{
 a{
     color:white;
     /* text-decoration: ; */
+}
+
+a:hover{
+    color: red;
+    transition: .4s;
 }
