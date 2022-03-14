@@ -140,3 +140,45 @@ a:hover{
     color: red;
     transition: .4s;
 }
+
+iframe{
+    width: 560px;
+     height: 315px;
+}
+
+@media only screen and (max-width: 580px){
+    .mother {
+        width: 100%;
+        height: 100%;
+    }
+
+    .info-left{
+        width: 70%;
+        
+    }
+
+    .info-right{
+        width:50%;
+        text-align: end;
+    }
+
+    .info-right > .mypic > img{
+        border-radius: 10px;
+        width: 200px;
+        height: 250px;
+        border: 1px solid;
+        border-radius: 1px solid;
+        border-color: white;
+    }
+    h2{
+        font-size: 14px;
+    }
+
+    h1{
+        font-size: 20px;}
+        
+    iframe{
+        width: 520px;
+        height: 315px;
+    }
+}
