@@ -3,6 +3,8 @@
 body{
     background-color:black;
     font-family: 'Roboto Mono', monospace;
+    /* width: 2000px; */
+    /* height: 3000px; */
 }
 
 .mother {
@@ -13,18 +15,6 @@ body{
 .a:hover{
     color: 11px 7px 17px 0px rgba(255, 0, 0, 0.75);
     transition: .4s;
-}
-
-.game{
-
-}
-
-.blog{
-
-}
-
-.recipe{
-
 }
 
 .head{
@@ -50,15 +40,41 @@ body{
     text-align: center;
 }
 
+.skill-head > h1{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
 .skill{
     display: flex;
     justify-content: center;
     text-align: center;
+    grid-gap: 10px;
 }
 
 .discord{
     width: 50%;
-    padding-left: 13px;
+    /* padding-left: 25px; */
+    border: 1px solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
+.html{
+    width: 50%;
+    border: 1px solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
+.video{
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+.video > iframe {
+    border: 1px solid;
+    border-color: white;
 }
 
 .info-right{
@@ -67,17 +83,39 @@ body{
 
 .mypic{
     padding: 5px;
-    padding-top: 23px
-   
+    padding-top: 23px;
 }
 
 .info-right > .mypic > img{
     border-radius: 10px;
     height: 355px;
+    width: 245px;
+    border: 1px solid;
+    border-radius: 1px solid;
+    border-color: white;
 }
 
-.html{
-    width: 50%;
+.footer{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.footer > .one{
+    width: 33.33%;
+    text-align: center;
+}
+
+.footer > .one > h1{
+    color: grey;
+}
+
+.footer > .two {
+    width: 33.33%;
+}
+
+.footer > .three {
+    width: 33.33%;
 }
 
 h1{
@@ -90,6 +128,7 @@ h1{
 
 h2{
     color:aliceblue;
+    padding: 10px;
 }
 
 a{
