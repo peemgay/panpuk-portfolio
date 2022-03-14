@@ -1,6 +1,6 @@
 body{
     text-align: center;
-    background-color: rgb(121, 113, 113);
+    background-color: rgb(255, 255, 255);
 }
 #game-container {
     display: flex;
@@ -12,7 +12,7 @@ body{
     position: relative;
     width: 600px;
     height: 600px;
-    border: 10px dotted rgb(255, 0, 0);
+    border: 10px dotted rgb(0, 0, 0);
 }
 
 .square {
